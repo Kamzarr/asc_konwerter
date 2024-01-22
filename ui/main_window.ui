@@ -437,12 +437,13 @@
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuAbout">
+   <widget class="QMenu" name="menuO_programie">
     <property name="title">
      <string>O programie</string>
     </property>
+    <addaction name="actAbout"/>
    </widget>
-   <addaction name="menuAbout"/>
+   <addaction name="menuO_programie"/>
   </widget>
   <action name="actionInstrukcja_u_ytkownika">
    <property name="text">
@@ -455,6 +456,16 @@
    </property>
   </action>
   <action name="actionAbout">
+   <property name="text">
+    <string>O programie</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>O programie</string>
+   </property>
+  </action>
+  <action name="actAbout">
    <property name="text">
     <string>O programie</string>
    </property>

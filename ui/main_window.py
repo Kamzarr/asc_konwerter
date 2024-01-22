@@ -33,6 +33,10 @@ class Ui_MainWindow(object):
         self.actionO_programie.setObjectName(u"actionO_programie")
         self.actionAbout = QAction(MainWindow)
         self.actionAbout.setObjectName(u"actionAbout")
+        self.actionAbout_2 = QAction(MainWindow)
+        self.actionAbout_2.setObjectName(u"actionAbout_2")
+        self.actAbout = QAction(MainWindow)
+        self.actAbout.setObjectName(u"actAbout")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setContextMenuPolicy(Qt.DefaultContextMenu)
@@ -186,12 +190,12 @@ class Ui_MainWindow(object):
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
         self.menubar.setGeometry(QRect(0, 0, 432, 26))
-        self.menuAbout = QMenu(self.menubar)
-        self.menuAbout.setObjectName(u"menuAbout")
+        self.menuO_programie = QMenu(self.menubar)
+        self.menuO_programie.setObjectName(u"menuO_programie")
         MainWindow.setMenuBar(self.menubar)
 
-        self.menubar.addAction(self.menuAbout.menuAction())
-        self.menuAbout.addAction(self.actionAbout)
+        self.menubar.addAction(self.menuO_programie.menuAction())
+        self.menuO_programie.addAction(self.actAbout)
 
         self.retranslateUi(MainWindow)
 
@@ -203,6 +207,8 @@ class Ui_MainWindow(object):
         self.actionInstrukcja_u_ytkownika.setText(QCoreApplication.translate("MainWindow", u"Instrukcja u\u017cytkownika", None))
         self.actionO_programie.setText(QCoreApplication.translate("MainWindow", u"O programie", None))
         self.actionAbout.setText(QCoreApplication.translate("MainWindow", u"O programie", None))
+        self.actionAbout_2.setText(QCoreApplication.translate("MainWindow", u"O programie", None))
+        self.actAbout.setText(QCoreApplication.translate("MainWindow", u"O programie", None))
 #if QT_CONFIG(tooltip)
         self.pbAddPath.setToolTip(QCoreApplication.translate("MainWindow", u"Dodaj", None))
 #endif // QT_CONFIG(tooltip)
@@ -219,6 +225,6 @@ class Ui_MainWindow(object):
         self.pbRunCoversions.setText(QCoreApplication.translate("MainWindow", u"konwertuj", None))
         self.progressBar.setFormat("")
         self.lbWhatInProgress.setText("")
-        self.menuAbout.setTitle(QCoreApplication.translate("MainWindow", u"O programie", None))
+        self.menuO_programie.setTitle(QCoreApplication.translate("MainWindow", u"O programie", None))
     # retranslateUi
 

@@ -13,6 +13,8 @@ from ui.about import Ui_AboutDialog
 
 from asc_converter import AscConverter
 
+VERSION = '1.0'
+
 class ResultOutputDialog(QDialog):
     def __init__(self):
         super().__init__()
@@ -34,6 +36,8 @@ class AboutDialog(QDialog):
         self.ui = Ui_AboutDialog()
         self.ui.setupUi(self)
         self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
+
+        self.ui.lbVersion.setText(VERSION)
 
 
 class ConwerterWorker(QObject):
@@ -222,7 +226,7 @@ class MainWindow(QMainWindow):
         self.ui.lwFilesList.clear()
 
     @Slot()
-    def on_actionAbout_triggered(self):
+    def on_actAbout_triggered(self):
         about = AboutDialog()
         about.exec_()
 
