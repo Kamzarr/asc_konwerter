@@ -23,7 +23,7 @@
     <number>15</number>
    </property>
    <item row="3" column="1">
-    <widget class="QLabel" name="label_8">
+    <widget class="QLabel" name="lbContact">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -68,7 +68,7 @@
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="lbCode">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -97,7 +97,7 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="lbAuthor">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
        <horstretch>0</horstretch>

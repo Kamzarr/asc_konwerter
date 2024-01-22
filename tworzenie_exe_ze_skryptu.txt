@@ -1,0 +1,18 @@
+przy pierwszym uruchomieniu:
+
+cd C:\programy_i_skrypty\asc_konwerter
+venv\Scripts\activate
+pip install pyinstaller
+
+
+
+przy każdym kolejnym:
+
+cd C:\programy_i_skrypty\asc_konwerter
+venv\Scripts\activate
+pyinstaller --onefile --distpath .\ --noconsole Konwerter_asc_gui.py
+
+
+lub z konsolą:
+
+pyinstaller --onefile --distpath .\ Konwerter_asc_gui.py
